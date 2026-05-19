@@ -5,7 +5,7 @@ const divisions = [
     imageAlt: 'Engineering Division',
     link: null,
     linkLabel: null,
-    icon: 'fas fa-drafting-compass',
+    
     tag: 'Division I',
     title: 'Engineering & Architecture',
     text: 'Integrated engineering consulting and architectural services delivering sustainable infrastructure, community development, and clean energy solutions with full-spectrum project management and QA/QC excellence.',
@@ -17,7 +17,7 @@ const divisions = [
     imageAlt: 'TLB Enterprises Agriculture',
     link: 'https://tlbenterprise.com/',
     linkLabel: 'Visit Site',
-    icon: 'fas fa-seedling',
+    
     tag: 'Division II',
     title: 'TLB Enterprises Agriculture',
     text: 'Driving sustainable, ethical, and accessible agricultural solutions that protect environmental resources, improve global food security, and deliver measurable community impact at institutional scale.',
@@ -29,7 +29,7 @@ const divisions = [
     imageAlt: 'TLB E-Commerce Store',
     link: 'https://tlbisbigworld.espwebsites.com',
     linkLabel: 'Visit Store',
-    icon: 'fas fa-store',
+    
     tag: 'Division III',
     title: 'TLB E-Commerce Platform',
     text: 'A secure, high-performance digital commerce infrastructure designed for enterprise-grade convenience, product variety, and seamless global transactions — built with institutional security and operational efficiency.',
@@ -41,7 +41,7 @@ const divisions = [
     imageAlt: 'TLB Enterprise USA',
     link: 'https://tlbenterprisesusa.com/',
     linkLabel: 'Visit Site',
-    icon: 'fas fa-chess-king',
+    
     tag: 'Division IV',
     title: 'TLB Enterprise USA',
     text: 'C-suite advisory and enterprise transformation services combining 37 years of market expertise with institutional-grade strategic frameworks. From market entry to capital strategy — we architect enterprise success.',
@@ -80,7 +80,6 @@ export default function Divisions() {
                 )}
               </div>
               <div className="card-body">
-                <div className="card-icon-wrap"><i className={d.icon}></i></div>
                 <div className="card-tag">{d.tag}</div>
                 <h3 className="card-title">{d.title}</h3>
                 <p className="card-text">{d.text}</p>

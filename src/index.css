@@ -753,30 +753,15 @@ input, textarea, select { font-family: inherit; }
 .card-preview a:hover .card-preview-cta { opacity: 1; transform: translateY(0); }
 
 .card-body { padding: 28px 32px 32px; flex: 1; display: flex; flex-direction: column; }
-.card-icon-wrap {
-  width: 48px; height: 48px;
-  background: var(--c-gold-glow);
-  border: 1px solid var(--c-gold-border);
-  border-radius: var(--radius-sm);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--c-gold);
-  font-size: 18px;
-  margin-bottom: 18px;
-  flex-shrink: 0;
-  transition: all var(--t-base);
-}
-.division-card:hover .card-icon-wrap {
-  background: var(--c-gold-glow);
-  border-color: var(--c-gold);
-  box-shadow: 0 0 16px rgba(240,180,41,0.2);
-}
+.card-icon-wrap { display: none; }
 .card-tag {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--c-gold-dim);
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  margin-top: 6px;
 }
 .card-title {
   font-family: var(--font-head);
@@ -933,24 +918,29 @@ input, textarea, select { font-family: inherit; }
 }
 .eco-logo-banner {
   width: 100%;
-  height: 76px;
-  background: #fff;
+  height: 92px; /* banner height */
+  background: var(--c-surface);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 0; /* remove extra padding so logo can fill the area */
   flex-shrink: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.02);
 }
 .eco-logo-banner img {
-  max-width: 100%; max-height: 100%;
-  width: auto; height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* scale the logo to fit the box while preserving aspect ratio */
+  display: block;
+  background: transparent;
+  margin: 0;
 }
 .eco-card-body { padding: 24px 28px 28px; flex: 1; display: flex; flex-direction: column; }
 .eco-card-header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 12px;
   margin-bottom: 16px;
 }
 .eco-num {
@@ -965,20 +955,7 @@ input, textarea, select { font-family: inherit; }
   opacity: 0.15;
   letter-spacing: -0.03em;
 }
-.eco-icon {
-  width: 44px; height: 44px;
-  background: var(--c-gold-glow);
-  border: 1px solid var(--c-gold-border);
-  border-radius: var(--radius-sm);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--c-gold);
-  font-size: 18px;
-  transition: all var(--t-base);
-}
-.eco-card:hover .eco-icon {
-  background: rgba(240,180,41,0.2);
-  box-shadow: 0 0 14px rgba(240,180,41,0.2);
-}
+.eco-num { margin-right: 6px; }
 .eco-title {
   font-family: var(--font-head);
   font-size: 20px;

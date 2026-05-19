@@ -70,7 +70,6 @@ export default function Ecosystem() {
               <div className="eco-card-body">
                 <div className="eco-card-header">
                   <div className="eco-num">{p.num}</div>
-                  <div className="eco-icon"><i className={p.icon}></i></div>
                 </div>
                 <h3 className="eco-title">{p.title}</h3>
                 <div className="eco-tag">{p.tag}</div>
