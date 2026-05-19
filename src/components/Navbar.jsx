@@ -67,11 +67,10 @@ export default function Navbar() {
           <img
             className="nav-logo-img"
             src="https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll"
-            alt="TLB Is Big Consulting Group logo"
+            alt="TLBISBIG logo"
           />
           <div className="logo-text-wrap">
-            <span className="logo-tlb">TLB</span>
-            <span className="logo-text">Is Big Consulting Group</span>
+            <span className="logo-tlb">TLBISBIG</span>
             <span className="logo-sub">Est. 1987 · LLC</span>
           </div>
         </a>
@@ -106,7 +105,7 @@ export default function Navbar() {
             className="nav-login"
           >
             <i className="fas fa-user-circle"></i>
-            <span>Login</span>
+            <span>WSO Login</span>
           </a>
         </div>
 

@@ -4,7 +4,7 @@ const milestones = [
     dot: 'timeline-dot',
     year: '1987 — The Beginning',
     heading: 'Founded at 25',
-    text: 'At just 25 years old, the founder establishes TLB Is Big Consulting Group, LLC — launching as a private, small-business consulting firm built on the conviction that strategic thinking and bold execution can transform industries and build lasting enterprise value.',
+    text: 'At just 25 years old, the founder establishes TLBISBIG — launching as a private, small-business consulting firm built on the conviction that strategic thinking and bold execution can transform industries and build lasting enterprise value.',
     gold: false,
   },
   {
@@ -12,7 +12,7 @@ const milestones = [
     dot: 'timeline-dot',
     year: '30+ Years — Global Expansion',
     heading: 'Beyond US Borders',
-    text: 'Over more than 30 years of sustained growth, TLB expands well beyond the United States — achieving global reach across customers, projects, programs, and services. The company diversifies into engineering, agriculture, and strategic advisory, building a multi-division enterprise portfolio.',
+    text: 'Over more than 30 years of sustained growth, TLBISBIG expands well beyond the United States — achieving global reach across customers, projects, programs, and services. The company diversifies into engineering, agriculture, and strategic advisory, building a multi-division enterprise portfolio.',
     gold: false,
   },
   {
@@ -20,7 +20,7 @@ const milestones = [
     dot: 'timeline-dot',
     year: 'Digital Era — Innovation',
     heading: 'Technology & Digital Transformation',
-    text: 'TLB embraces the digital economy with the launch of its E-Commerce platform and strategic partnerships in AI-powered procurement (GoFundItNow) and drone workforce development (MyDroneForce) — extending the group\'s reach into emerging technology verticals.',
+    text: 'TLBISBIG embraces the digital economy with the launch of its E-Commerce platform and strategic partnerships in AI-powered procurement (GoFundItNow) and drone workforce development (MyDroneForce) — extending the group\'s reach into emerging technology verticals.',
     gold: false,
   },
   {
@@ -28,7 +28,7 @@ const milestones = [
     dot: 'timeline-dot tl-dot-gold',
     year: 'Today — Global Conglomerate',
     heading: 'A Diversified Global Enterprise',
-    text: 'TLB Is Big Consulting Group, LLC stands today as a diversified global enterprise holding group with four active strategic divisions, a curated portfolio of international partnerships, and an unwavering commitment to building legacies that endure across generations.',
+    text: 'TLBISBIG stands today as a diversified global enterprise holding group with four active strategic divisions, a curated portfolio of international partnerships, and an unwavering commitment to building legacies that endure across generations.',
     gold: true,
   },
 ];

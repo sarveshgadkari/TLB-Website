@@ -16,11 +16,10 @@ export default function Footer() {
                 <img
                   className="footer-logo-img"
                   src="https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll"
-                  alt="TLB Is Big Consulting Group"
+                  alt="TLBISBIG"
                 />
                 <div className="logo-text-wrap">
-                  <span className="logo-tlb">TLB</span>
-                  <span className="logo-text">Is Big Consulting Group, LLC</span>
+                  <span className="logo-tlb">TLBISBIG</span>
                 </div>
               </a>
               <p className="footer-tagline">Building Legacies. Driving Global Impact.</p>
@@ -44,7 +43,7 @@ export default function Footer() {
             <div className="footer-nav-col">
               <h4 className="footer-col-title">Enterprise</h4>
               <ul className="footer-links">
-                <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollTo('about'); }}>About TLB</a></li>
+                <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollTo('about'); }}>About TLBISBIG</a></li>
                 <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>Our Divisions</a></li>
                 <li><a href="#ecosystem" onClick={(e) => { e.preventDefault(); scrollTo('ecosystem'); }}>Partner Ecosystem</a></li>
                 <li><a href="#heritage" onClick={(e) => { e.preventDefault(); scrollTo('heritage'); }}>Our Heritage</a></li>
@@ -55,7 +54,7 @@ export default function Footer() {
               <h4 className="footer-col-title">Divisions</h4>
               <ul className="footer-links">
                 <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>Engineering &amp; Architecture</a></li>
-                <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>TLB Enterprises Agriculture</a></li>
+                <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>TLBISBIG Enterprises Agriculture</a></li>
                 <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>E-Commerce Platform</a></li>
                 <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>Strategic Advisory</a></li>
               </ul>
@@ -79,7 +78,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer-bottom-content">
-            <p>&copy; 2025 TLB Is Big Consulting Group, LLC. All rights reserved.</p>
+            <p>&copy; 2025 TLBISBIG. All rights reserved.</p>
             <p>Global Enterprise &amp; Strategic Investment Holdings</p>
           </div>
         </div>

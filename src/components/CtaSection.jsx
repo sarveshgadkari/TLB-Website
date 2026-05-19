@@ -17,7 +17,7 @@ export default function CtaSection() {
           </h2>
           <p className="cta-text reveal-up delay-2">
             Whether you're seeking strategic advisory, enterprise partnership, or investment alignment —
-            TLB Is Big has the experience, infrastructure, and vision to deliver transformative outcomes.
+            TLBISBIG has the experience, infrastructure, and vision to deliver transformative outcomes.
           </p>
           <div className="cta-actions reveal-up delay-3">
             <a href="#contact" className="btn btn-gold btn-lg" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>

@@ -4,21 +4,21 @@ export default function About() {
       <div className="container">
         <div className="about-grid">
           <div className="about-left">
-            <div className="section-label reveal-left">About TLB</div>
+            <div className="section-label reveal-left">About TLBISBIG</div>
             <h2 className="section-title reveal-left delay-1">
               Thirty-Seven Years of<br />
               <em>Strategic Excellence</em>
             </h2>
             <div className="gold-line reveal-left delay-1"></div>
             <p className="about-text reveal-left delay-2">
-              TLB Is Big Consulting Group, LLC is a privately held global enterprise conglomerate
+              TLBISBIG is a privately held global enterprise conglomerate
               founded in 1987. What began as a visionary consulting practice has evolved into a
               diversified strategic investment platform spanning engineering, technology, sustainable
               agriculture, and emerging industry verticals.
             </p>
             <p className="about-text reveal-left delay-3">
               With operations across multiple markets and a portfolio of high-impact business units,
-              TLB delivers institutional-grade solutions to governments, corporations, and communities
+              TLBISBIG delivers institutional-grade solutions to governments, corporations, and communities
               worldwide. Our integrated approach combines deep domain expertise with strategic capital
               allocation to create lasting enterprise value.
             </p>
@@ -55,7 +55,7 @@ export default function About() {
                 <p>"Founded on the conviction that strategic thinking, institutional discipline, and bold execution can transform markets — and build legacies that endure across generations."</p>
               </div>
               <div className="about-card-footer">
-                <span>TLB Is Big Consulting Group, LLC</span>
+                <span>TLBISBIG</span>
               </div>
             </div>
             <div className="about-accent-block">

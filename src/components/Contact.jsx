@@ -28,7 +28,7 @@ export default function Contact() {
             </h2>
             <div className="gold-line reveal-left delay-1"></div>
             <p className="contact-desc reveal-left delay-2">
-              TLB Is Big Consulting Group welcomes discussions with potential partners, investors,
+              TLBISBIG welcomes discussions with potential partners, investors,
               and enterprise clients. Our team is prepared to explore how our diversified capabilities
               can align with your strategic objectives.
             </p>
@@ -56,13 +56,13 @@ export default function Contact() {
               </div>
             </div>
             <div className="social-links reveal-left delay-4">
-              <a href="https://www.linkedin.com/company/tlb-enterprises-group-holdings/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/tlb-enterprises-group-holdings/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="https://www.facebook.com/TLBPromoProducts" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Facebook">
+                <a href="https://www.facebook.com/TLBPromoProducts" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.youtube.com/@TLBISBIGConsultingGroup" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="YouTube">
+                <a href="https://www.youtube.com/@TLBISBIGConsultingGroup" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="YouTube">
                 <i className="fab fa-youtube"></i>
               </a>
             </div>
@@ -102,7 +102,7 @@ export default function Contact() {
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message *</label>
-                <textarea id="message" name="message" rows="5" placeholder="Describe your strategic objectives and how TLB can add value..." required value={form.message} onChange={handleChange}></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your strategic objectives and how TLBISBIG can add value..." required value={form.message} onChange={handleChange}></textarea>
               </div>
               <button
                 type="submit"
