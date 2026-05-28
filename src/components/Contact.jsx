@@ -1,20 +1,68 @@
 import { useState } from 'react';
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: '', message: '' });
   const [form, setForm] = useState({
     firstName: '', lastName: '', email: '', company: '', inquiryType: '', message: '',
   });
 
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
+    setIsSubmitting(true);
+    setStatus({ type: '', message: '' });
+
+    if (!accessKey) {
+      setIsSubmitting(false);
+      setStatus({
+        type: 'error',
+        message: 'Missing Web3Forms key. Set VITE_WEB3FORMS_ACCESS_KEY in your environment.',
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: 'New strategic inquiry from TLBISBIG website',
+          from_name: `${form.firstName} ${form.lastName}`.trim(),
+          name: `${form.firstName} ${form.lastName}`.trim(),
+          email: form.email,
+          company: form.company,
+          inquiryType: form.inquiryType,
+          message: form.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'Unable to submit the inquiry right now.');
+      }
+
+      setStatus({
+        type: 'success',
+        message: 'Inquiry submitted successfully. We will get back to you soon.',
+      });
       setForm({ firstName: '', lastName: '', email: '', company: '', inquiryType: '', message: '' });
-    }, 3500);
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message: error instanceof Error ? error.message : 'Something went wrong. Please try again.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -107,14 +155,16 @@ export default function Contact() {
               <button
                 type="submit"
                 className="btn btn-gold btn-full"
-                disabled={submitted}
-                style={submitted ? { background: '#4ade80', color: '#030712', cursor: 'default' } : {}}
+                disabled={isSubmitting}
               >
-                {submitted
-                  ? <><i className="fas fa-check-circle"></i> Inquiry Submitted</>
+                {isSubmitting
+                  ? <><i className="fas fa-spinner fa-spin"></i> Sending...</>
                   : <>Submit Strategic Inquiry <i className="fas fa-paper-plane"></i></>
                 }
               </button>
+              {status.message ? (
+                <p className={`form-status ${status.type}`} role="status">{status.message}</p>
+              ) : null}
             </form>
           </div>
         </div>
