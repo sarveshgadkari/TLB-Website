@@ -99,7 +99,7 @@ export default function Navbar() {
             Strategic Inquiry
           </a>
           <a
-            href="https://tlbisbigworld.espwebsites.com"
+            href="https://wsso.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-login"
@@ -111,7 +111,7 @@ export default function Navbar() {
 
         <div className="nav-right-actions">
           <a
-            href="https://tlbisbigworld.espwebsites.com"
+            href="https://wsso.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-login nav-login-mobile"
