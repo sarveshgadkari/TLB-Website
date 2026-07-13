@@ -47,6 +47,18 @@ const partners = [
     services: ['Geotechnical Services', 'Infrastructure Analysis', 'Multi-State Operations', 'Engineering Intelligence'],
     link: 'https://www.mtaengineers.com',
   },
+  {
+    delay: 'delay-5',
+    logo: '/sfg-logo-cropped.png',
+    logoAlt: 'Sims Financial Services Group logo',
+    num: '05',
+    icon: 'fas fa-landmark',
+    title: 'Sims Financial Services Group',
+    tag: 'Financial Services Partner',
+    text: 'A valued financial services partner within the TLBISBIG Consulting Group ecosystem, expanding advisory reach and client-focused financial solutions.',
+    services: ['Financial Advisory', 'Client Solutions', 'Strategic Partnership', 'Consulting Network'],
+    link: 'https://www.simsfinancialgroup.com/',
+  },
 ];
 
 export default function Ecosystem() {
