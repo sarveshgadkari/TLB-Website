@@ -1,4 +1,7 @@
+"use client";
+
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const CFG = {
   count: 72,
@@ -154,13 +157,6 @@ export default function Hero() {
     };
   }, []);
 
-  const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const top = el.getBoundingClientRect().top + window.scrollY - 76;
-    window.scrollTo({ top, behavior: 'smooth' });
-  };
-
   return (
     <section id="home" className="hero" ref={heroRef}>
       <canvas id="heroCanvas" ref={canvasRef} aria-hidden="true"></canvas>
@@ -182,12 +178,12 @@ export default function Hero() {
             sustainable agriculture, and strategic investment verticals.
           </p>
           <div className="hero-ctas reveal-up delay-3">
-            <a href="#divisions" className="btn btn-gold" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>
+            <Link href="/divisions" className="btn btn-gold">
               Explore Our Enterprise
-            </a>
-            <a href="#contact" className="btn btn-outline" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>
+            </Link>
+            <Link href="/contact" className="btn btn-outline">
               Strategic Inquiry <i className="fas fa-arrow-right"></i>
-            </a>
+            </Link>
           </div>
           <div className="hero-stats reveal-up delay-4">
             <div className="hero-stat">

@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { useScrollReveal } from '../hooks/useScrollReveal';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Divisions from '../components/Divisions';
@@ -8,11 +6,20 @@ import Ecosystem from '../components/Ecosystem';
 import Heritage from '../components/Heritage';
 import CtaSection from '../components/CtaSection';
 import Contact from '../components/Contact';
+import StructuredData from '../components/StructuredData';
+import { breadcrumbSchema } from '../lib/seo';
+import { siteDescription, siteName } from '../lib/site';
 
-export default function Home() {
-  useScrollReveal();
+export const metadata = {
+  title: siteName,
+  description: siteDescription,
+  alternates: { canonical: '/' },
+};
+
+export default function HomePage() {
   return (
-    <main>
+    <>
+      <StructuredData data={breadcrumbSchema([{ name: 'Home', path: '/' }])} />
       <Hero />
       <About />
       <Divisions />
@@ -21,6 +28,6 @@ export default function Home() {
       <Heritage />
       <CtaSection />
       <Contact />
-    </main>
+    </>
   );
 }

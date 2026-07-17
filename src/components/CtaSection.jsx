@@ -1,11 +1,6 @@
-export default function CtaSection() {
-  const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const top = el.getBoundingClientRect().top + window.scrollY - 76;
-    window.scrollTo({ top, behavior: 'smooth' });
-  };
+import Link from 'next/link';
 
+export default function CtaSection() {
   return (
     <section className="cta-section">
       <div className="cta-bg"></div>
@@ -20,12 +15,12 @@ export default function CtaSection() {
             TLBISBIG has the experience, infrastructure, and vision to deliver transformative outcomes.
           </p>
           <div className="cta-actions reveal-up delay-3">
-            <a href="#contact" className="btn btn-gold btn-lg" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>
+            <Link href="/contact" className="btn btn-gold btn-lg">
               Initiate Strategic Inquiry
-            </a>
-            <a href="#divisions" className="btn btn-outline btn-lg" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>
+            </Link>
+            <Link href="/divisions" className="btn btn-outline btn-lg">
               Explore Divisions
-            </a>
+            </Link>
           </div>
         </div>
       </div>

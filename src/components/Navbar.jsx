@@ -1,26 +1,13 @@
+"use client";
+
 import { useState, useEffect, useRef } from 'react';
-
-const NAV_OFFSET = 76;
-
-function scrollTo(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
-  window.scrollTo({ top, behavior: 'smooth' });
-}
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeId, setActiveId] = useState('');
+  const pathname = usePathname();
   const navLinksRef = useRef(null);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   useEffect(() => {
     if (menuOpen) {
@@ -36,34 +23,18 @@ export default function Navbar() {
     return () => document.removeEventListener('keydown', onKey);
   }, []);
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('section[id]');
-    if (!('IntersectionObserver' in window)) return;
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) setActiveId(entry.target.id);
-      });
-    }, { rootMargin: '-35% 0px -55% 0px' });
-    sections.forEach(s => observer.observe(s));
-    return () => observer.disconnect();
-  }, []);
-
-  const handleLink = (id) => {
-    setMenuOpen(false);
-    scrollTo(id);
-  };
-
   const links = [
-    { id: 'about', label: 'About' },
-    { id: 'divisions', label: 'Divisions' },
-    { id: 'ecosystem', label: 'Ecosystem' },
-    { id: 'heritage', label: 'Heritage' },
+    { href: '/about', label: 'About' },
+    { href: '/divisions', label: 'Divisions' },
+    { href: '/ecosystem', label: 'Ecosystem' },
+    { href: '/heritage', label: 'Heritage' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
-    <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="navbar">
+    <nav className="nav scrolled" id="navbar">
       <div className="container nav-container">
-        <a href="#home" className="nav-logo" onClick={(e) => { e.preventDefault(); scrollTo('home'); }}>
+        <Link href="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
           <img
             className="nav-logo-img"
             src="https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll"
@@ -73,7 +44,7 @@ export default function Navbar() {
             <span className="logo-tlb">TLBISBIG</span>
             <span className="logo-sub">Est. 1987 · LLC</span>
           </div>
-        </a>
+        </Link>
 
         <div
           id="nav-menu"
@@ -81,23 +52,19 @@ export default function Navbar() {
           ref={navLinksRef}
           aria-hidden={!menuOpen}
         >
-          {links.map(({ id, label }) => (
-            <a
-              key={id}
-              href={`#${id}`}
-              className={`nav-link${activeId === id ? ' nav-active' : ''}`}
-              onClick={(e) => { e.preventDefault(); handleLink(id); }}
+          {links.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`nav-link${pathname === href ? ' nav-active' : ''}`}
+              onClick={() => setMenuOpen(false)}
             >
               {label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
-            className="nav-link nav-cta"
-            onClick={(e) => { e.preventDefault(); handleLink('contact'); }}
-          >
+          <Link href="/contact" className="nav-link nav-cta" onClick={() => setMenuOpen(false)}>
             Strategic Inquiry
-          </a>
+          </Link>
           <a
             href="https://wsso.vercel.app/"
             target="_blank"

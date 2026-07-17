@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 
 export default function Contact() {
@@ -7,8 +9,6 @@ export default function Contact() {
     firstName: '', lastName: '', email: '', company: '', inquiryType: '', message: '',
   });
 
-  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
   const handleSubmit = async (e) => {
@@ -16,25 +16,14 @@ export default function Contact() {
     setIsSubmitting(true);
     setStatus({ type: '', message: '' });
 
-    if (!accessKey) {
-      setIsSubmitting(false);
-      setStatus({
-        type: 'error',
-        message: 'Missing Web3Forms key. Set VITE_WEB3FORMS_ACCESS_KEY in your environment.',
-      });
-      return;
-    }
-
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
         body: JSON.stringify({
-          access_key: accessKey,
-          subject: 'New strategic inquiry from TLBISBIG website',
           from_name: `${form.firstName} ${form.lastName}`.trim(),
           name: `${form.firstName} ${form.lastName}`.trim(),
           email: form.email,

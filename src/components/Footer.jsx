@@ -1,18 +1,13 @@
-export default function Footer() {
-  const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const top = el.getBoundingClientRect().top + window.scrollY - 76;
-    window.scrollTo({ top, behavior: 'smooth' });
-  };
+import Link from 'next/link';
 
+export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="site-footer">
       <div className="footer-top">
         <div className="container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <a href="#home" className="footer-logo" onClick={(e) => { e.preventDefault(); scrollTo('home'); }}>
+              <Link href="/" className="footer-logo">
                 <img
                   className="footer-logo-img"
                   src="https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll"
@@ -21,7 +16,7 @@ export default function Footer() {
                 <div className="logo-text-wrap">
                   <span className="logo-tlb">TLBISBIG</span>
                 </div>
-              </a>
+              </Link>
               <p className="footer-tagline">Building Legacies. Driving Global Impact.</p>
               <p className="footer-desc">
                 A privately held global enterprise conglomerate delivering institutional-grade solutions
@@ -43,29 +38,29 @@ export default function Footer() {
             <div className="footer-nav-col">
               <h4 className="footer-col-title">Enterprise</h4>
               <ul className="footer-links">
-                <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollTo('about'); }}>About TLBISBIG</a></li>
-                <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>Our Divisions</a></li>
-                <li><a href="#ecosystem" onClick={(e) => { e.preventDefault(); scrollTo('ecosystem'); }}>Partner Ecosystem</a></li>
-                <li><a href="#heritage" onClick={(e) => { e.preventDefault(); scrollTo('heritage'); }}>Our Heritage</a></li>
+                <li><Link href="/about">About TLBISBIG</Link></li>
+                <li><Link href="/divisions">Our Divisions</Link></li>
+                <li><Link href="/ecosystem">Partner Ecosystem</Link></li>
+                <li><Link href="/heritage">Our Heritage</Link></li>
               </ul>
             </div>
 
             <div className="footer-nav-col">
               <h4 className="footer-col-title">Divisions</h4>
               <ul className="footer-links">
-                <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>Engineering &amp; Architecture</a></li>
-                <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>TLBISBIG Enterprises Agriculture</a></li>
-                <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>E-Commerce Platform</a></li>
-                <li><a href="#divisions" onClick={(e) => { e.preventDefault(); scrollTo('divisions'); }}>Strategic Advisory</a></li>
+                <li><Link href="/divisions">Engineering &amp; Architecture</Link></li>
+                <li><Link href="/divisions">TLBISBIG Enterprises Agriculture</Link></li>
+                <li><Link href="/divisions">E-Commerce Platform</Link></li>
+                <li><Link href="/divisions">Strategic Advisory</Link></li>
               </ul>
             </div>
 
             <div className="footer-nav-col">
               <h4 className="footer-col-title">Connect</h4>
               <ul className="footer-links">
-                <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>Strategic Inquiry</a></li>
-                <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>Partnership</a></li>
-                <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>Investment</a></li>
+                <li><Link href="/contact">Strategic Inquiry</Link></li>
+                <li><Link href="/contact">Partnership</Link></li>
+                <li><Link href="/contact">Investment</Link></li>
               </ul>
               <div className="footer-badge">
                 <span>Est.</span>
