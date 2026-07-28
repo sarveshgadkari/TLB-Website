@@ -28,7 +28,7 @@ const milestones = [
     dot: 'timeline-dot tl-dot-gold',
     year: 'Today — Global Conglomerate',
     heading: 'A Diversified Global Enterprise',
-    text: 'TLBISBIG stands today as a diversified global enterprise holding group with four active strategic divisions, a curated portfolio of international partnerships, and an unwavering commitment to building legacies that endure across generations.',
+    text: 'TLBISBIG stands today as a diversified global enterprise holding group with five active strategic divisions, a curated portfolio of international partnerships, and an unwavering commitment to building legacies that endure across generations.',
     gold: true,
   },
 ];

@@ -197,7 +197,7 @@ export default function Hero() {
             </div>
             <div className="stat-sep"></div>
             <div className="hero-stat">
-              <span className="stat-num">4</span>
+              <span className="stat-num">5</span>
               <span className="stat-lbl">Strategic Divisions</span>
             </div>
             <div className="stat-sep"></div>

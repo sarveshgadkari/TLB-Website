@@ -52,6 +52,7 @@ export default function Footer() {
                 <li><Link href="/divisions">TLBISBIG Enterprises Agriculture</Link></li>
                 <li><Link href="/divisions">E-Commerce Platform</Link></li>
                 <li><Link href="/divisions">Strategic Advisory</Link></li>
+                <li><Link href="/divisions">SME Digital Business Solutions</Link></li>
               </ul>
             </div>
 

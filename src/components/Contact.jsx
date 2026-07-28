@@ -134,6 +134,7 @@ export default function Contact() {
                   <option value="advisory">Advisory Services</option>
                   <option value="engineering">Engineering Division</option>
                   <option value="agriculture">Agriculture Division</option>
+                  <option value="sme-digital">SME Digital Business Solutions</option>
                   <option value="general">General Inquiry</option>
                 </select>
               </div>

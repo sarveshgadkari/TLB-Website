@@ -47,6 +47,25 @@ const divisions = [
     text: 'C-suite advisory and enterprise transformation services combining 37 years of market expertise with institutional-grade strategic frameworks. From market entry to capital strategy — we architect enterprise success.',
     services: ['C-Suite Advisory & Consulting', 'Business Transformation Strategy', 'Investment Strategy & Planning', 'Market Entry & Expansion', 'Enterprise Architecture Design'],
   },
+  {
+    delay: 'delay-5',
+    image: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll',
+    imageAlt: 'TLBISBIG SME Digital Business Solutions',
+    imageFit: 'logo',
+    link: 'https://wsso.vercel.app/',
+    linkLabel: 'Visit Platform',
+    tag: 'Division V',
+    title: 'SME Digital Business Solutions',
+    text: 'Practical digital systems and strategic support designed to help small and mid-sized enterprises organize operations, strengthen teams, and improve business performance.',
+    services: [
+      'WSSO (Daily Operations Platform)',
+      'Work Force AI Engine Platform',
+      'HR Solutions Platform',
+      'Project and Program (Partner Solutions)',
+      'Loan and Funding Solutions',
+      'Business and Financial Strategic Solutions',
+    ],
+  },
 ];
 
 export default function Divisions() {
@@ -64,7 +83,7 @@ export default function Divisions() {
         <div className="divisions-grid">
           {divisions.map((d) => (
             <div key={d.tag} className={`division-card reveal-up ${d.delay}`}>
-              <div className="card-preview">
+              <div className={`card-preview${d.imageFit === 'logo' ? ' card-preview-logo' : ''}`}>
                 {d.link ? (
                   <a href={d.link} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${d.title}`}>
                     <img src={d.image} alt={d.imageAlt} loading="lazy" />

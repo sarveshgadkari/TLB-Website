@@ -20,7 +20,7 @@ function animateCounter(el, start, end, suffix, duration) {
 const stats = [
   { target: 1987, start: 1980, suffix: '', desc: 'Year Established' },
   { target: 37,   start: 0,    suffix: '+', desc: 'Years in Operation' },
-  { target: 4,    start: 0,    suffix: '', desc: 'Strategic Divisions' },
+  { target: 5,    start: 0,    suffix: '', desc: 'Strategic Divisions' },
   { target: 4,    start: 0,    suffix: '', desc: 'Global Partners' },
 ];
 

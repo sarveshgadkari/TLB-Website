@@ -741,7 +741,30 @@ input, textarea, select { font-family: inherit; }
   display: block;
   transition: transform 0.55s ease;
 }
+.card-preview-logo {
+  background: linear-gradient(145deg, rgba(15,18,32,0.95) 0%, rgba(28,32,48,0.9) 100%);
+}
+.card-preview-logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-preview-logo img {
+  width: auto;
+  height: 58%;
+  max-width: 42%;
+  object-fit: contain;
+  margin: auto;
+  position: absolute;
+  inset: 0;
+}
+.card-preview-logo a img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
 .division-card:hover .card-preview img { transform: scale(1.05); }
+.division-card:hover .card-preview-logo img { transform: scale(1.06); }
 .card-preview a { display: block; width: 100%; height: 100%; position: relative; }
 .card-preview-overlay {
   position: absolute;
@@ -1494,6 +1517,7 @@ input, textarea, select { font-family: inherit; }
 .delay-2 { transition-delay: 0.22s; }
 .delay-3 { transition-delay: 0.34s; }
 .delay-4 { transition-delay: 0.46s; }
+.delay-5 { transition-delay: 0.58s; }
 
 /* ----------------------------------------
    RESPONSIVE — TABLET (1080px)
