@@ -4,7 +4,25 @@ import { siteName, siteUrl } from '../../../lib/site';
 
 export async function POST(request) {
   const payload = await request.json();
-  const { firstName, lastName, email, company, inquiryType, message, source, pagePath } = payload;
+  const {
+    firstName,
+    lastName,
+    email,
+    company,
+    inquiryType,
+    message,
+    source,
+    pagePath,
+    toolName,
+    toolId,
+  } = payload;
+
+  const inquiryLabel = toolName
+    ? [toolName, inquiryType].filter(Boolean).join(' — ')
+    : inquiryType;
+  const storedMessage = toolName
+    ? `Platform: ${toolName}${toolId ? ` (${toolId})` : ''}\n${inquiryType ? `Enquiry: ${inquiryType}\n` : ''}\n${message}`
+    : message;
 
   if (!firstName || !lastName || !email || !message) {
     return NextResponse.json(
@@ -29,8 +47,8 @@ export async function POST(request) {
     last_name: lastName,
     email,
     company: company || null,
-    inquiry_type: inquiryType || null,
-    message,
+    inquiry_type: inquiryLabel || null,
+    message: storedMessage,
     source: source || 'unknown',
     page_path: pagePath || null,
   });

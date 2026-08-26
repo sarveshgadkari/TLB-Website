@@ -1,6 +1,6 @@
 import { siteUrl } from '../lib/site';
 
-const routes = ['/', '/about', '/divisions', '/ecosystem', '/heritage', '/contact'];
+const routes = ['/', '/about', '/divisions', '/solutions', '/ecosystem', '/heritage', '/contact'];
 
 export default function sitemap() {
   const now = new Date();

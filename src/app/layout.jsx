@@ -20,7 +20,7 @@ export const metadata = {
   },
   description: siteDescription,
   applicationName: siteName,
-  keywords: ['TLBISBIG', 'consulting group', 'enterprise holdings', 'strategic partnerships', 'engineering', 'agriculture', 'investment'],
+  keywords: ['TLBISBIG', 'consulting group', 'enterprise holdings', 'strategic partnerships', 'engineering', 'agriculture', 'investment', 'Zoho', 'Salesforce', 'QuickBooks', 'Microsoft 365'],
   openGraph: {
     type: 'website',
     siteName,

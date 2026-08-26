@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Divisions from '../components/Divisions';
+import SolutionsPreview from '../components/SolutionsPreview';
 import Stats from '../components/Stats';
 import Ecosystem from '../components/Ecosystem';
 import Heritage from '../components/Heritage';
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Hero />
       <About />
       <Divisions />
+      <SolutionsPreview />
       <Stats />
       <Ecosystem />
       <Heritage />

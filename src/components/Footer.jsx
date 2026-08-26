@@ -40,6 +40,7 @@ export default function Footer() {
               <ul className="footer-links">
                 <li><Link href="/about">About TLBISBIG</Link></li>
                 <li><Link href="/divisions">Our Divisions</Link></li>
+                <li><Link href="/solutions">Allocation Hub</Link></li>
                 <li><Link href="/ecosystem">Partner Ecosystem</Link></li>
                 <li><Link href="/heritage">Our Heritage</Link></li>
               </ul>
@@ -59,6 +60,7 @@ export default function Footer() {
             <div className="footer-nav-col">
               <h4 className="footer-col-title">Connect</h4>
               <ul className="footer-links">
+                <li><Link href="/solutions">Platform Enquiry</Link></li>
                 <li><Link href="/contact">Strategic Inquiry</Link></li>
                 <li><Link href="/contact">Partnership</Link></li>
                 <li><Link href="/contact">Investment</Link></li>
