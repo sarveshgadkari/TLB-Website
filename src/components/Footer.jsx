@@ -10,8 +10,10 @@ export default function Footer() {
               <Link href="/" className="footer-logo">
                 <img
                   className="footer-logo-img"
-                  src="https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll"
-                  alt="TLBISBIG"
+                  src="/logo.png"
+                  alt="TLBISBIG Consulting Group logo"
+                  width="48"
+                  height="48"
                 />
                 <div className="logo-text-wrap">
                   <span className="logo-tlb">TLBISBIG</span>
@@ -76,7 +78,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer-bottom-content">
-            <p>&copy; 2025 TLBISBIG. All rights reserved.</p>
+            <p>&copy; 2026 TLBISBIG. All rights reserved.</p>
             <p>Global Enterprise &amp; Strategic Investment Holdings</p>
           </div>
         </div>

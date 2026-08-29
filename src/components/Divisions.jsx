@@ -49,7 +49,7 @@ const divisions = [
   },
   {
     delay: 'delay-5',
-    image: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll',
+    image: '/logo.png',
     imageAlt: 'TLBISBIG SME Digital Business Solutions',
     imageFit: 'logo',
     link: 'https://wsso.vercel.app/',

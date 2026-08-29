@@ -2,13 +2,13 @@ import Heritage from '../../components/Heritage';
 import CtaSection from '../../components/CtaSection';
 import PageHero from '../../components/PageHero';
 import StructuredData from '../../components/StructuredData';
-import { breadcrumbSchema } from '../../lib/seo';
+import { breadcrumbSchema, pageMetadata } from '../../lib/seo';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Heritage',
   description: 'Trace the history and evolution of TLBISBIG Consulting Group from 1987 to today.',
-  alternates: { canonical: '/heritage' },
-};
+  path: '/heritage',
+});
 
 export default function HeritagePage() {
   return (

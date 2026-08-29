@@ -1,13 +1,13 @@
 import Contact from '../../components/Contact';
 import PageHero from '../../components/PageHero';
 import StructuredData from '../../components/StructuredData';
-import { breadcrumbSchema } from '../../lib/seo';
+import { breadcrumbSchema, pageMetadata } from '../../lib/seo';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Contact',
   description: 'Contact TLBISBIG Consulting Group for strategic partnerships, investment, and enterprise inquiries.',
-  alternates: { canonical: '/contact' },
-};
+  path: '/contact',
+});
 
 export default function ContactPage() {
   return (

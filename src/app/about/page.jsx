@@ -4,13 +4,13 @@ import Heritage from '../../components/Heritage';
 import CtaSection from '../../components/CtaSection';
 import PageHero from '../../components/PageHero';
 import StructuredData from '../../components/StructuredData';
-import { breadcrumbSchema } from '../../lib/seo';
+import { breadcrumbSchema, pageMetadata } from '../../lib/seo';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'About',
   description: 'Learn about the history, mission, and strategic foundation of TLBISBIG Consulting Group.',
-  alternates: { canonical: '/about' },
-};
+  path: '/about',
+});
 
 export default function AboutPage() {
   return (

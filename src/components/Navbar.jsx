@@ -38,8 +38,10 @@ export default function Navbar() {
         <Link href="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
           <img
             className="nav-logo-img"
-            src="https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/blob.png/:/rs=w:165,h:169,cg:true,m/cr=w:165,h:169/qt=q:100/ll"
-            alt="TLBISBIG logo"
+            src="/logo.png"
+            alt="TLBISBIG Consulting Group logo"
+            width="42"
+            height="42"
           />
           <div className="logo-text-wrap">
             <span className="logo-tlb">TLBISBIG</span>

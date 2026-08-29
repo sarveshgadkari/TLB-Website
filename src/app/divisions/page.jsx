@@ -2,13 +2,13 @@ import Divisions from '../../components/Divisions';
 import CtaSection from '../../components/CtaSection';
 import PageHero from '../../components/PageHero';
 import StructuredData from '../../components/StructuredData';
-import { breadcrumbSchema } from '../../lib/seo';
+import { breadcrumbSchema, pageMetadata } from '../../lib/seo';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Divisions',
   description: 'Explore the strategic divisions that power the TLBISBIG enterprise ecosystem.',
-  alternates: { canonical: '/divisions' },
-};
+  path: '/divisions',
+});
 
 export default function DivisionsPage() {
   return (

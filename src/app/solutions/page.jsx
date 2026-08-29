@@ -2,14 +2,15 @@ import ResearchHub from '../../components/ResearchHub';
 import CtaSection from '../../components/CtaSection';
 import PageHero from '../../components/PageHero';
 import StructuredData from '../../components/StructuredData';
-import { breadcrumbSchema } from '../../lib/seo';
+import { breadcrumbSchema, pageMetadata } from '../../lib/seo';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Research Allocation Hub',
   description:
     'Explore TLBISBIG third-party platforms — Zoho, QuickBooks, Slack, Google Workspace, Microsoft 365, Salesforce, and more. Expand any tool for allocation guidance and submit an enquiry stored in our CRM.',
-  alternates: { canonical: '/solutions' },
-};
+  path: '/solutions',
+  keywords: ['Zoho', 'QuickBooks', 'Slack', 'Google Workspace', 'Microsoft 365', 'Salesforce', 'Odoo', 'software allocation', 'SME software'],
+});
 
 export default function SolutionsPage() {
   return (

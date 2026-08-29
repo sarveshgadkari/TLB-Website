@@ -8,13 +8,15 @@ import Heritage from '../components/Heritage';
 import CtaSection from '../components/CtaSection';
 import Contact from '../components/Contact';
 import StructuredData from '../components/StructuredData';
-import { breadcrumbSchema } from '../lib/seo';
+import { breadcrumbSchema, pageMetadata } from '../lib/seo';
 import { siteDescription, siteName } from '../lib/site';
 
 export const metadata = {
-  title: siteName,
-  description: siteDescription,
-  alternates: { canonical: '/' },
+  ...pageMetadata({
+    title: { absolute: siteName },
+    description: siteDescription,
+    path: '/',
+  }),
 };
 
 export default function HomePage() {
