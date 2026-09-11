@@ -15,7 +15,15 @@ export default function Navbar() {
     } else {
       document.body.style.overflow = '';
     }
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [menuOpen]);
+
+  useEffect(() => {
+    setMenuOpen(false);
+    document.body.style.overflow = '';
+  }, [pathname]);
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') setMenuOpen(false); };
@@ -69,7 +77,7 @@ export default function Navbar() {
             Strategic Inquiry
           </Link>
           <a
-            href="https://wsso.vercel.app/"
+            href="https://wsso.tlbisbig.world/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-login"
@@ -81,7 +89,7 @@ export default function Navbar() {
 
         <div className="nav-right-actions">
           <a
-            href="https://wsso.vercel.app/"
+            href="https://wsso.tlbisbig.world/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-login nav-login-mobile"

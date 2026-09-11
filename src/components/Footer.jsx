@@ -56,6 +56,7 @@ export default function Footer() {
                 <li><Link href="/divisions">E-Commerce Platform</Link></li>
                 <li><Link href="/divisions">Strategic Advisory</Link></li>
                 <li><Link href="/divisions">SME Digital Business Solutions</Link></li>
+                <li><Link href="/divisions">Workforce 2.0</Link></li>
               </ul>
             </div>
 

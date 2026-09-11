@@ -17,7 +17,7 @@ export default function DivisionsPage() {
       <PageHero
         eyebrow="Business Architecture"
         title="Strategic Divisions Built for Scale"
-        description="A diversified portfolio spanning engineering, agriculture, e-commerce, and enterprise advisory, each aligned to measurable long-term impact."
+        description="A diversified portfolio spanning engineering, agriculture, e-commerce, enterprise advisory, SME digital systems, and Workforce 2.0."
         primaryAction={{ href: '/contact', label: 'Discuss a Partnership' }}
         secondaryAction={{ href: '/ecosystem', label: 'Meet Our Partners' }}
       />

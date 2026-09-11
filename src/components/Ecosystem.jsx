@@ -1,63 +1,58 @@
 const partners = [
   {
     delay: 'delay-1',
-    logo: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/mydroneforce.com.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
-    logoAlt: 'MyDroneForce logo',
-    num: '01',
-    icon: 'fas fa-helicopter',
+    image: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/mydroneforce.com.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
+    imageAlt: 'MyDroneForce logo',
+    tag: 'Partner I',
     title: 'MyDroneForce',
-    tag: 'Drone Workforce Development',
-    text: 'Strategic partner for FAA Part 107 certification, drone industry training, and workforce development — positioning TLB at the forefront of the rapidly expanding unmanned aerial systems industry.',
-    services: ['FAA Part 107 Certification', 'Drone Training Programs', 'Workforce Development', 'UAS Industry'],
+    text: 'FAA Part 107 certification and drone workforce training for the expanding UAS industry.',
+    services: ['Part 107 Certification', 'Drone Training', 'Workforce Development'],
     link: 'https://www.mydroneforce.com',
+    linkLabel: 'Visit Partner',
   },
   {
     delay: 'delay-2',
-    logo: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/Screen%20Shot%202025-08-19%20at%204.57.44%20AM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
-    logoAlt: 'STUDPAC MUSA Global logo',
-    num: '02',
-    icon: 'fas fa-industry',
+    image: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/Screen%20Shot%202025-08-19%20at%204.57.44%20AM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
+    imageAlt: 'STUDPAC MUSA Global logo',
+    tag: 'Partner II',
     title: 'STUDPAC MUSA Global',
-    tag: 'AgriTech & Manufacturing',
-    text: 'A global leader in agricultural technology and precision manufacturing solutions. This partnership amplifies TLB\'s agricultural division with cutting-edge technology and international manufacturing capability.',
-    services: ['Agricultural Technology', 'Precision Manufacturing', 'Global Operations', 'Technology Integration'],
+    text: 'AgriTech and precision manufacturing that extend TLB’s agricultural division globally.',
+    services: ['Agricultural Technology', 'Manufacturing', 'Global Operations'],
     link: 'https://tlbenterprise.com/',
+    linkLabel: 'Visit Partner',
   },
   {
     delay: 'delay-3',
-    logo: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/WhatsApp%20Image%202025-08-21%20at%209.25.52%20AM.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
-    logoAlt: 'GoFundItNow logo',
-    num: '03',
-    icon: 'fas fa-robot',
+    image: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/WhatsApp%20Image%202025-08-21%20at%209.25.52%20AM.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
+    imageAlt: 'GoFundItNow logo',
+    tag: 'Partner III',
     title: 'GoFundItNow',
-    tag: 'AI-Powered Procurement',
-    text: 'An AI-powered RFP automation platform revolutionizing government and enterprise procurement. Partnering with TLB to deliver next-generation funding intelligence and procurement automation solutions.',
-    services: ['AI Automation', 'RFP Intelligence', 'Government Procurement', 'Enterprise Solutions'],
+    text: 'AI-powered RFP automation for government and enterprise procurement.',
+    services: ['AI Automation', 'RFP Intelligence', 'Procurement'],
     link: 'https://gofunditnow.com',
+    linkLabel: 'Visit Partner',
   },
   {
     delay: 'delay-4',
-    logo: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/Screen%20Shot%202025-08-19%20at%205.05.53%20AM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
-    logoAlt: 'MTA Engineers logo',
-    num: '04',
-    icon: 'fas fa-hard-hat',
+    image: 'https://img1.wsimg.com/isteam/ip/adc6a11b-2ba2-4e2a-b8d3-0e4e50140ce1/Screen%20Shot%202025-08-19%20at%205.05.53%20AM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25',
+    imageAlt: 'MTA Engineers logo',
+    tag: 'Partner IV',
     title: 'MTA Engineers',
-    tag: 'Geotechnical Engineering',
-    text: 'Multi-state geotechnical engineering services providing foundational infrastructure intelligence. MTA Engineers delivers the technical depth that underpins TLB\'s complex infrastructure and development projects.',
-    services: ['Geotechnical Services', 'Infrastructure Analysis', 'Multi-State Operations', 'Engineering Intelligence'],
+    text: 'Multi-state geotechnical engineering for infrastructure and development projects.',
+    services: ['Geotechnical', 'Infrastructure', 'Multi-State Ops'],
     link: 'https://www.mtaengineers.com',
+    linkLabel: 'Visit Partner',
   },
   {
     delay: 'delay-5',
-    logo: '/sfg-logo-cropped.png',
-    logoAlt: 'Sims Financial Services Group logo',
-    num: '05',
-    icon: 'fas fa-landmark',
+    image: '/sfg-logo-cropped.png',
+    imageAlt: 'Sims Financial Services Group logo',
+    tag: 'Partner V',
     title: 'Sims Financial Services Group',
-    tag: 'Financial Services Partner',
-    text: 'A valued financial services partner within the TLBISBIG Consulting Group ecosystem, expanding advisory reach and client-focused financial solutions.',
-    services: ['Financial Advisory', 'Client Solutions', 'Strategic Partnership', 'Consulting Network'],
+    text: 'Financial advisory partner expanding client-focused solutions across the TLB ecosystem.',
+    services: ['Financial Advisory', 'Client Solutions', 'Consulting'],
     link: 'https://www.simsfinancialgroup.com/',
+    linkLabel: 'Visit Partner',
   },
 ];
 
@@ -73,27 +68,29 @@ export default function Ecosystem() {
             each extending our capability and global reach across critical industry verticals.
           </p>
         </div>
-        <div className="ecosystem-grid">
+        <div className="divisions-grid">
           {partners.map((p) => (
-            <div key={p.num} className={`eco-card reveal-up ${p.delay}`}>
-              <div className="eco-logo-banner">
-                <img src={p.logo} alt={p.logoAlt} loading="lazy" />
-              </div>
-              <div className="eco-card-body">
-                <div className="eco-card-header">
-                  <div className="eco-num">{p.num}</div>
-                </div>
-                <h3 className="eco-title">{p.title}</h3>
-                <div className="eco-tag">{p.tag}</div>
-                <p className="eco-text">{p.text}</p>
-                <div className="eco-services">
-                  {p.services.map(s => <span key={s}>{s}</span>)}
-                </div>
-                <a href={p.link} target="_blank" rel="noopener noreferrer" className="eco-link">
-                  Visit Partner <i className="fas fa-external-link-alt"></i>
+            <article key={p.tag} className={`division-card reveal-up ${p.delay}`}>
+              <div className="card-preview">
+                <a href={p.link} target="_blank" rel="noopener noreferrer" aria-label={`${p.linkLabel}: ${p.title}`}>
+                  <img src={p.image} alt={p.imageAlt} loading="lazy" />
                 </a>
               </div>
-            </div>
+              <div className="card-body">
+                <div className="card-tag">{p.tag}</div>
+                <h3 className="card-title">{p.title}</h3>
+                <p className="card-text">{p.text}</p>
+                <ul className="card-services">
+                  {p.services.map((s) => <li key={s}>{s}</li>)}
+                </ul>
+                <div className="card-footer">
+                  <span className="card-status active">Active Partner</span>
+                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="card-visit-link">
+                    {p.linkLabel} <i className="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
           ))}
         </div>
       </div>
