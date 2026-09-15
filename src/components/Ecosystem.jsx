@@ -54,6 +54,65 @@ const partners = [
     link: 'https://www.simsfinancialgroup.com/',
     linkLabel: 'Visit Partner',
   },
+  {
+    delay: 'delay-1',
+    image: '/partners/wsgci-logo.png',
+    imageAlt: 'Wall Street Green Cap Intro logo',
+    imageFit: 'dark',
+    tag: 'Partner VI',
+    title: 'Wall Street Green Cap Intro',
+    text: 'Connects investor-ready companies with institutional capital through introductions, coaching, and close.',
+    services: ['Investor Matching', 'Green Finance', 'Pitch Coaching'],
+    link: 'https://investor-tlb.vercel.app/',
+    linkLabel: 'Visit Partner',
+  },
+  {
+    delay: 'delay-2',
+    image: '/partners/tlbps-logo.png',
+    imageAlt: 'TLBPS Infratech Developers logo',
+    imageFit: 'dark',
+    tag: 'Partner VII',
+    title: 'TLBPS Infratech Developers',
+    text: 'Sustainable infrastructure and eco-luxury hospitality across Central and South India.',
+    services: ['Hospitality', 'Urban Development', 'Sustainability'],
+    link: 'https://www.tlbps.com/',
+    linkLabel: 'Visit Partner',
+  },
+  {
+    delay: 'delay-3',
+    image: '/partners/aviation-logo.jpeg',
+    imageAlt: 'Mid-South Youth Aviation Initiative logo',
+    tag: 'Partner VIII',
+    title: 'Mid-South Youth Aviation Initiative',
+    text: 'Free STEM and flight programs for grades 6–12 in Arkansas, Tennessee, and Mississippi.',
+    services: ['STEM + Flight', 'Grades 6–12', 'AR · TN · MS'],
+    link: 'https://aviation-blond.vercel.app/',
+    linkLabel: 'Visit Partner',
+  },
+  {
+    delay: 'delay-4',
+    image: '/partners/dfi-logo.png',
+    imageAlt: 'Dream Flights International logo',
+    imageFit: 'dark',
+    tag: 'Partner IX',
+    title: 'Dream Flights International',
+    text: 'Private mobility access across air, ground, sea, and stay for principals who cannot pause.',
+    services: ['Air', 'Ground', 'Sea & Stay'],
+    link: 'https://www.dreamflightsintl.com/',
+    linkLabel: 'Visit Partner',
+  },
+  {
+    delay: 'delay-5',
+    image: '/partners/tlb-enterprises-logo.jpg',
+    imageAlt: 'TLB Enterprises, Inc. logo',
+    imageFit: 'zoom',
+    tag: 'Partner X',
+    title: 'TLB Enterprises, Inc.',
+    text: 'Sustainable agriculture, container farms, and clean-food programs from Little Rock, Arkansas.',
+    services: ['Container Farms', 'AgriTech', 'Food Security'],
+    link: 'https://tlbenterprise.com/',
+    linkLabel: 'Visit Partner',
+  },
 ];
 
 export default function Ecosystem() {
@@ -71,7 +130,7 @@ export default function Ecosystem() {
         <div className="divisions-grid">
           {partners.map((p) => (
             <article key={p.tag} className={`division-card reveal-up ${p.delay}`}>
-              <div className="card-preview">
+              <div className={`card-preview${p.imageFit === 'dark' ? ' is-dark' : ''}${p.imageFit === 'zoom' ? ' is-zoom' : ''}`}>
                 <a href={p.link} target="_blank" rel="noopener noreferrer" aria-label={`${p.linkLabel}: ${p.title}`}>
                   <img src={p.image} alt={p.imageAlt} loading="lazy" />
                 </a>
