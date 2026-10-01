@@ -709,6 +709,58 @@ input, textarea, select { font-family: inherit; }
   line-height: 1.4;
 }
 
+.about-purpose {
+  margin-top: 88px;
+  padding-top: 72px;
+  border-top: 1px solid var(--c-border);
+}
+.purpose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.purpose-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-gold-border);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px 32px;
+  position: relative;
+  overflow: hidden;
+}
+.purpose-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--g-gold);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.purpose-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--c-gold-glow);
+  border: 1px solid var(--c-gold-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-gold);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.purpose-title {
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--c-white);
+  margin-bottom: 14px;
+}
+.purpose-text {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--c-text);
+}
+
 /* ----------------------------------------
    DIVISIONS
    ---------------------------------------- */
@@ -1913,6 +1965,7 @@ input, textarea, select { font-family: inherit; }
   :root { --section-py: 80px; --container-px: 28px; }
   .about-grid { grid-template-columns: 1fr; gap: 56px; }
   .about-right { max-width: 500px; }
+  .purpose-grid { grid-template-columns: 1fr; }
   .divisions-grid { grid-template-columns: repeat(2, minmax(0, 340px)); }
   .ecosystem-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1972,6 +2025,8 @@ input, textarea, select { font-family: inherit; }
   .stat-sep { display: none; }
 
   .about-card { padding: 28px 24px; }
+  .about-purpose { margin-top: 56px; padding-top: 48px; }
+  .purpose-card { padding: 28px 22px; }
   .about-accent-block {
     position: relative; bottom: auto; right: auto;
     display: inline-flex; margin-top: -16px;

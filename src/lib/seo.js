@@ -18,6 +18,7 @@ export function organizationSchema() {
     logo: `${siteUrl}/logo.png`,
     image: `${siteUrl}/og-image.png`,
     foundingDate: '1987',
+    slogan: 'To provide end-to-end consulting services and innovative solutions to individuals and organizations through effective technology, at a price they are willing to pay.',
     areaServed: 'US',
     sameAs: [
       'https://www.linkedin.com/company/tlb-enterprises-group-holdings/posts/?feedView=all',

@@ -64,6 +64,35 @@ export default function About() {
             </div>
           </div>
         </div>
+        <div className="about-purpose">
+          <div className="section-header">
+            <div className="section-label reveal-up">Purpose</div>
+            <h2 className="section-title text-center reveal-up delay-1">Vision &amp; Mission</h2>
+          </div>
+          <div className="purpose-grid">
+            <article className="purpose-card reveal-up delay-1">
+              <div className="purpose-icon" aria-hidden="true">
+                <i className="fas fa-eye"></i>
+              </div>
+              <h3 className="purpose-title">Vision</h3>
+              <p className="purpose-text">
+                To impact the lives of individuals and businesses, helping them improve their
+                situation and move from where they are now to where they want to be, ultimately
+                helping them achieve a better quality of life.
+              </p>
+            </article>
+            <article className="purpose-card reveal-up delay-2">
+              <div className="purpose-icon" aria-hidden="true">
+                <i className="fas fa-bullseye"></i>
+              </div>
+              <h3 className="purpose-title">Mission</h3>
+              <p className="purpose-text">
+                To provide end-to-end consulting services and innovative solutions to individuals
+                and organizations through effective technology, at a price they are willing to pay.
+              </p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
   );

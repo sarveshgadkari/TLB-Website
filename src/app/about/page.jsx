@@ -8,7 +8,7 @@ import { breadcrumbSchema, pageMetadata } from '../../lib/seo';
 
 export const metadata = pageMetadata({
   title: 'About',
-  description: 'Learn about the history, mission, and strategic foundation of TLBISBIG Consulting Group.',
+  description: 'Learn about the vision, mission, history, and strategic foundation of TLBISBIG Consulting Group.',
   path: '/about',
 });
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About TLBISBIG"
         title="Thirty-Seven Years of Strategic Excellence"
-        description="TLBISBIG is a global enterprise platform built on disciplined execution, diversified verticals, and long-term value creation."
+        description="Our vision is a better quality of life. Our mission is end-to-end consulting and innovative solutions through effective technology, at a price people are willing to pay."
         primaryAction={{ href: '/contact', label: 'Start a Conversation' }}
         secondaryAction={{ href: '/divisions', label: 'Explore Divisions' }}
       />
